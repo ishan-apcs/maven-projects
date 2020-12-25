@@ -21,7 +21,6 @@ public class MakingChange {
      */
     
     public static void main(String[] args) { // initial run function, starts rest of code
-        // TODO code application logic here
         Scanner input; // define Scanner
         
         String name; // define name variable
@@ -279,12 +278,10 @@ public class MakingChange {
     }
     
     public static double noMenu(Scanner input) {
-        String item; // user's order
-        
         double price; // price of user's order
         
         System.out.println("What are you buying today?"); // ask for order
-        item = input.nextLine(); // check for order
+        input.nextLine(); // check for user's order
         
         System.out.println("That's awesome! How much does that cost? The dollar sign is optional."); // ask for price of custom order
         price = removeDollarSign(input.nextLine()); // check for price of order, make acceptable value
